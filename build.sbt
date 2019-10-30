@@ -3,7 +3,7 @@ name := "sbt-github-deploy-test"
 organization := "com.github.yaroot"
 scalaVersion := "2.12.10"
 crossScalaVersions := Seq("2.12.10", "2.11.12", "2.13.1")
-version := "0.0.3"
+version := "0.0.4-SNAPSHOTS"
 
 scalacOptions := Seq(
   "-deprecation",                     // Emit warning and location for usages of deprecated APIs.
@@ -23,3 +23,5 @@ libraryDependencies ++= {
 scalafmtOnCompile := true
 cancelable in Global := true
 
+publishTo := Some("Github Package Registry" at "https://maven.pkg.github.com/yaroot/sbt-github-deploy-test")
+credentials += Credentials("GitHub Package Registry", "maven.pkg.github.com", "yaroot", scala.sys.env.getOrElse("GITHUB_TOKEN", ""))
