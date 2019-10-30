@@ -3,7 +3,7 @@ name := "sbt-github-deploy-test"
 organization := "com.github.yaroot"
 scalaVersion := "2.12.10"
 crossScalaVersions := Seq("2.12.10", "2.11.12", "2.13.1")
-version := "0.0.1"
+version := "0.0.3"
 
 scalacOptions := Seq(
   "-deprecation",                     // Emit warning and location for usages of deprecated APIs.
