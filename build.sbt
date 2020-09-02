@@ -1,9 +1,9 @@
 // format: off
 name := "sbt-github-deploy-test"
 organization := "com.github.yaroot"
-scalaVersion := "2.12.10"
-crossScalaVersions := Seq("2.12.10", "2.11.12", "2.13.1")
-version := "0.0.4-SNAPSHOTS"
+scalaVersion := "2.13.3"
+crossScalaVersions := Seq("2.12.12", "2.13.3")
+version := "0.0.5-SNAPSHOTS"
 
 scalacOptions := Seq(
   "-deprecation",                     // Emit warning and location for usages of deprecated APIs.
@@ -15,8 +15,8 @@ scalacOptions := Seq(
 
 libraryDependencies ++= {
   Seq(
-    "org.typelevel" %% "cats-core" % "2.0.0",
-    "org.specs2"    %% "specs2-core" % "4.7.1" % "test"
+    "org.typelevel" %% "cats-core" % "2.1.1",
+    "org.specs2"    %% "specs2-core" % "4.10.3" % "test"
   )
 }
 
